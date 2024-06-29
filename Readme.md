@@ -22,7 +22,7 @@ To create a game, connect to the server and send the following JSON request:
 }
 ```
 
-This request will create a game with 1 million bits, and it will also include 5 AI bots that will compete against the human players.
+This request will create a game with 1 million bits, and it will also include 5 bots that will compete against the human players.
 
 Next, you need to join the game using the join_game method:
 ```JSON

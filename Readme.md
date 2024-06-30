@@ -2,7 +2,7 @@
 ***
 
 Who will be the first to set all the bits to 1?
-Challenge your friends and AI bots to be the last one standing.
+Challenge your friends and bots to be the last one standing.
 
 ## How start ??
 

@@ -90,6 +90,10 @@ func (g *Game) PlayerMove(ctx context.Context, playerId string, index int) *Play
 	if err != nil {
 		return &PlayerMoved{}
 	}
+	if index >= g.Game.Size {
+		slog.Debug("Index out of range", "gameId", g.GameId, "playerId", player.PlayerId, "index", index)
+		return &PlayerMoved{}
+	}
 	g.Game.ToggleBit(ctx, index)
 	g.playerMutex.Lock()
 	defer g.playerMutex.Unlock()
